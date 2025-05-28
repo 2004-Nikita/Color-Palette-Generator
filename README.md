@@ -1,4 +1,4 @@
-# Color-Palette-Generator
+
 # Color Palette Generator
 
 A clean and modern web app that generates random color palettes to inspire your design projects.  
