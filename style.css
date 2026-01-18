@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -148,3 +149,146 @@ h2 {
   color: white;
   border-color: #444;
 }
+=======
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #fceabb, #f8b500);
+  margin: 0;
+  padding: 0;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
+  margin-top: 40px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+h1::before {
+  content: "\1F3A8";
+  font-size: 2rem;
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+input[type="number"] {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 70px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #f57c00;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #ef6c00;
+  transform: scale(1.05);
+}
+
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.color-box {
+  width: 110px;
+  height: 110px;
+  border-radius: 12px;
+  position: relative;
+  color: #fff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  padding-bottom: 10px;
+}
+
+.color-box:hover {
+  transform: scale(1.07);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.palette-row {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+.dark-mode .container {
+  background: rgba(30, 30, 30, 0.8);
+  color: #eee;
+}
+
+.dark-mode .color-box {
+  border: 1px solid #444;
+}
+
+.dark-mode button {
+  background: #333;
+  color: #fff;
+}
+
+.dark-mode button:hover {
+  background: #555;
+}
+
+.dark-mode footer {
+  color: #aaa;
+}
+>>>>>>> df15b26301290196cd191b746b5c0ab14f65701b
