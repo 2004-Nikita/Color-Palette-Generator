@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 let locked = [];
 
 function getRandomColor() {
@@ -178,4 +178,4 @@ function toggleDarkMode() {
 
 window.onload = generateColors;
 
->>>>>>> df15b26301290196cd191b746b5c0ab14f65701b
+
