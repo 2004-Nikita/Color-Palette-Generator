@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Color Palette Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <div class="container">
     <h1>🎨 Color Palette Generator</h1>
 
     <div class="controls">
       <input type="number" id="color-count" min="3" max="10" value="5">
-      <button onclick="generateColors()">Generate Palette</button>
-      <button onclick="copyAllColors()">Copy All</button>
-      <button onclick="savePalette()">Save Palette</button>
-      <button onclick="showSavedPalettes()">Show Saved</button>
-      <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+
+      <button class="primary" onclick="generateColors()">Generate</button>
+      <button class="secondary" onclick="copyAllColors()">Copy All</button>
+      <button class="secondary" onclick="savePalette()">Save</button>
+      <button class="secondary" onclick="showSavedPalettes()">Saved</button>
+      <button class="secondary" onclick="toggleDarkMode()">Dark Mode</button>
     </div>
 
     <div class="palette" id="palette"></div>
@@ -23,6 +26,9 @@
     <h2>Saved Palettes</h2>
     <div id="saved-palettes"></div>
   </div>
+
+  <!-- Toast -->
+  <div id="toast"></div>
 
   <script src="script.js"></script>
 </body>
